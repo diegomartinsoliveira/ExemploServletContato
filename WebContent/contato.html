@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registros de Contatos</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script> 
+
+	function validaContato() {
+	
+		
+	if (document.frmcontatos.txtnome.value == "") {
+		alert("Preencha o campo Nome");
+		document.frmcontatos.txtnome.focus();
+		return false;
+	}
+		
+	if (document.frmcontatos.txtfone.value == "") {
+		alert("Preencha o campo Telefone");
+		document.frmcontatos.txtfone.focus();
+		return false;
+	}
+		
+	if (document.frmcontatos.txtendereco.value == "") {
+		alert("Preencha o campo Endereço");
+ 		document.frmcontatos.txtendereco.focus();
+		return false;
+		}
+	
+	return true;
+	
+	}
+	
+	</script>
+	
+</head>
+<body>
+			<form name="frmcontatos" method="get" action="insereContato" onsubmit="return validaContato()">
+			<fieldset class= "contatos">
+				<legend>Contatos</legend>
+				<label for="nome">Nome:</label>
+				<input type="text" name="txtnome" id="nome" placeholder="Nome e Sobrenome">
+				<label for="fone">Telefone: </label>
+				<input type="text" name="txtfone" id="fone" placeholder="(XX)XXXXX-XXXX">
+				<label for="endereco">Endereço: </label>
+				<input type="text" name="txtendereco" id="endereco" placeholder="Rua/Nº da Casa/Bairro">
+				<button type="reset">Limpar</button> 
+				<button type="submit">Enviar</button>
+			</fieldset>
+			</form>
+</body>
+</html>

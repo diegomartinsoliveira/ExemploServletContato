@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+	margin: 0 auto;
+	font-family: "Century Gothic", sans-serif;
+	background-color: #c0c0c0;
+	
+}
+
+fieldset {
+	
+	background-color: #0080ff;
+}
+
+form {
+	
+	max-width: 500px;
+	width: 70%;
+	padding: 20px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+/**********************************
+Configuração da página Registro de Contatos
+***********************************/
+.contatos {
+	width: 300px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.contatos input, .contatos textarea {
+	margin: 5px auto;
+	width: 100%;
+	padding: 5px 0;
+	margin-top: 1rem;
+}
+
+.contatos textarea {
+	height: 100px;
+	resize: none;
+}
+
+.contatos button {
+	width: 30%;
+	float: left;
+	margin: 6px 10%;
+	background-color: #c0c0c0;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 20px;
+}
+.contatos button:hover {
+	background: #ffffff;
+	color: c0c0c0;
+	cursor: pointer;
+
+	}
